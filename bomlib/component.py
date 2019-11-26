@@ -11,6 +11,7 @@ DNF = [
     "dnf",
     "dnl",
     "dnp",
+    "dnm",
     "do not fit",
     "do not place",
     "do not load",

@@ -176,7 +176,7 @@ config_file = ini
 
 # User can overwrite with a specific config file
 if args.cfg:
-    config_file = args.cfg
+    config_file = os.path.abspath(os.path.join(os.path.dirname(input_file), args.cfg))
 
 # Read preferences from file. If file does not exists, default preferences will be used
 pref = BomPref()

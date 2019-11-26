@@ -296,7 +296,7 @@ class Component():
                 exclude = True
                 break
             if opt.startswith("+"):
-                include = include and opt[1:] in [str(cfg) for cfg in self.prefs.pcbConfig]
+                include = include and str(opt[1:]) in [str(cfg) for cfg in self.prefs.pcbConfig]
 
         return include and not exclude
 
